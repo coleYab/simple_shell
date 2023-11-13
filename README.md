@@ -1,6 +1,6 @@
 # Simple Shell Project
 
-This is a simple shell implementation in C, created as a collaborative project. The shell supports basic command execution and includes additional features for [mention any specific features or functionalities].
+This is a simple shell implementation in C, created as a collaborative project. The shell supports basic command execution.
 
 ## Contributore:
   Yeabsira Moges and Korede Odeyemi
