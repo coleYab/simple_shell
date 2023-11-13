@@ -5,7 +5,7 @@ This is a simple shell implementation in C, created as a collaborative project. 
 ## Contributors:
   Yeabsira Moges and Korede Odeyemi
 
-## How to Use
+## How to Use 
 
 1. clone this repo to your local machine using `git clone https://github.com/coleYab/simple_shell.git`
 2. change directory to simple_shell `cd simple_shell`
