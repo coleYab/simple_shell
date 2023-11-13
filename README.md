@@ -2,7 +2,7 @@
 
 This is a simple shell implementation in C, created as a collaborative project. The shell supports basic command execution.
 
-## Contributore:
+## Contributors:
   Yeabsira Moges and Korede Odeyemi
 
 ## How to Use
