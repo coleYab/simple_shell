@@ -7,6 +7,6 @@ This is a simple shell implementation in C, created as a collaborative project. 
 
 ## How to Use
 
-1. clone this repo to your local machine
+1. clone this repo to your local machine using `git clone https://github.com/coleYab/simple_shell.git`
 2. compile the source code using `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh`
 3. Run the shell using `./hsh`
