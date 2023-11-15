@@ -71,8 +71,6 @@ char *utils_getline(char *prompt)
 	if (total_read == -1)
 	{
 		free(command);
-		if (isatty(STDIN_FILENO) == 1)
-			_print(STDOUT_FILENO, "\n");
 		exit(0);
 	}
 	command[total_read - 1] = '\0';
