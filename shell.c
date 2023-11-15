@@ -19,7 +19,7 @@ int main(int argc, char *argv[], char *env[])
 	while (true)
 	{
 		signal(SIGINT, ctrl_c);
-		cmd = utils_getline(prompt);
+		cmd = utils_getline(prompt, status);
 		if (cmd == NULL)
 			free(cmd), exit(status);
 		if (cmd[0] == '\n')
@@ -56,10 +56,11 @@ int main(int argc, char *argv[], char *env[])
  * utils_getline - is the tool that is used to getline.
  *
  * @prompt: the prompt displayed to get the line.
+ * @stat: the possiblw exit status.
  *
  * Return: pointer to the line read.
 */
-char *utils_getline(char *prompt)
+char *utils_getline(char *prompt, int stat)
 {
 	size_t len = 0;
 	ssize_t total_read;
@@ -71,7 +72,7 @@ char *utils_getline(char *prompt)
 	if (total_read == -1)
 	{
 		free(command);
-		exit(0);
+		exit(stat);
 	}
 	command[total_read - 1] = '\0';
 	if (command[0] == '\0')
