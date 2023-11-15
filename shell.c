@@ -15,7 +15,7 @@ int main(int argc, char *argv[], char *env[])
 	int status = 0;
 
 	getcwd(current_dir, 1024), (void)argv, (void)argc, (void)env;
-	prompt = (isatty(STDIN_FILENO) == 1) ? ("#cisfun$ ") : ("");
+	prompt = (isatty(STDIN_FILENO) == 1) ? ("$ ") : ("");
 	while (true)
 	{
 		signal(SIGINT, ctrl_c);
