@@ -21,7 +21,7 @@ int main(int argc, char *argv[], char *env[])
 		signal(SIGINT, ctrl_c);
 		cmd = utils_getline(prompt);
 		if (cmd == NULL)
-			free(cmd), _exit(status);
+			free(cmd), exit(status);
 		if (cmd[0] == '\n')
 		{
 			free(cmd);
@@ -135,9 +135,9 @@ void exit_fun(char **ptr, char *prog_name, int *status)
 			return;
 		}
 		else
-			free(ptr), _exit(*status);
+			free(ptr), exit(*status);
 	}
 	else
 		free(ptr);
-	_exit(*status);
+	exit(*status);
 }
